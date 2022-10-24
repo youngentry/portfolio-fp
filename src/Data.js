@@ -18,7 +18,6 @@ const portfolio = [
         mock: process.env.PUBLIC_URL + "/mockup.png",
         cell: process.env.PUBLIC_URL + "/cellphone.png",
         link: "https://youngentry.github.io/imdb/",
-        blog: "https://youngentry.github.io/imdb/",
     },
     {
         id: 2,
@@ -32,7 +31,6 @@ const portfolio = [
         mock: process.env.PUBLIC_URL + "/mockup.png",
         cell: process.env.PUBLIC_URL + "/cellphone.png",
         link: "http://youngentry.github.io/2k-web-coding-220718",
-        blog: "http://youngentry.github.io/2k-web-coding-220718",
     },
     {
         id: 3,
@@ -46,7 +44,6 @@ const portfolio = [
         mock: process.env.PUBLIC_URL + "/mockup.png",
         cell: process.env.PUBLIC_URL + "/cellphone.png",
         link: "http://youngentry.github.io/ops",
-        blog: "http://youngentry.github.io/ops",
     },
     {
         id: 4,
@@ -59,7 +56,6 @@ const portfolio = [
         mock: process.env.PUBLIC_URL + "/mockup.png",
         cell: process.env.PUBLIC_URL + "/cellphone.png",
         link: "http://youngentry.github.io/bespoke",
-        blog: "http://youngentry.github.io/bespoke",
     },
     // {
     //     id: 5,
@@ -72,7 +68,6 @@ const portfolio = [
     //     mock: process.env.PUBLIC_URL + "/mockup.png",
     //     cell: process.env.PUBLIC_URL + "/cellphone.png",
     //     link: "http://youngentry.github.io/",
-    //     blog: "http://youngentry.github.io/",
     // },
 ];
 
