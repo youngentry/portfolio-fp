@@ -73,45 +73,65 @@ const Main = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="section main">
-                                <div className="case">
-                                    <div className="inner">
-                                        <h1>FRONTEND WEB DEVELOPER</h1>
-                                        <p>
-                                            <span>
-                                                원리에 관심이 많은 예비 프론트엔드 개발자 <strong>{profile.name}</strong>입니다
-                                            </span>
-                                            {/* <img src={process.env.PUBLIC_URL + "/html5.svg"} alt="" /> */}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+
                             {portfolio.map((it, idx) => {
                                 return (
                                     <div className="section">
                                         <div className="case">
                                             <div className="inner">
-                                                <div className="photo">
-                                                    <img src={it.src} alt={it.title} />
+                                                <div className="images">
+                                                    <div className="mock">
+                                                        <figure>
+                                                            <img src={it.mock} alt={it.title} />
+                                                        </figure>
+                                                        <div className="screen"></div>
+                                                    </div>
+                                                    <div className="cell">
+                                                        <img src={it.cell} alt={it.title} />
+                                                    </div>
                                                 </div>
-                                                <ul className="desc">
-                                                    <li>{it.title}</li>
-                                                    <li>{it.type}</li>
+                                                <ul className="des">
                                                     <li>
-                                                        <a href={it.link} target="_blank">
-                                                            <button>LINK</button>
-                                                        </a>
+                                                        <h2>{it.title}</h2>
+                                                    </li>
+                                                    <li>
+                                                        <span>TYPE</span>
+                                                        <strong> {it.type}</strong>
+                                                    </li>
+                                                    <li>
+                                                        <span>FONT</span>
+                                                        {it.font.map((el) => {
+                                                            return <strong className="skill">{el} </strong>;
+                                                        })}
+                                                    </li>
+
+                                                    <li>
+                                                        <span>SKILL</span>
+                                                        {it.skill.map((el) => {
+                                                            return <strong className="skill">{el} </strong>;
+                                                        })}
+                                                    </li>
+                                                    <li>
+                                                        <span>DATE</span>
+                                                        <strong> {it.date}</strong>
+                                                    </li>
+                                                    {/* <li className="color">
+                                                        {it.color && <span>color</span>}
+                                                        <ol>
+                                                            {it.color?.map((color, idx) => {
+                                                                return <li style={{ background: color }}></li>;
+                                                            })}
+                                                        </ol>
+                                                    </li> */}
+                                                    <li className="link">
+                                                        <div>
+                                                            <a href={it.link} target="_blank">
+                                                                <button>VEIW ON WEB</button>
+                                                            </a>
+                                                        </div>
                                                     </li>
                                                     <li>
                                                         <p>{it.info}</p>
-                                                    </li>
-                                                    <li>
-                                                        {it.color && <strong>color</strong>}
-                                                        <ol>
-                                                            {it.color?.map((color, idx) => {
-                                                                return <li style={{ background: color }}>{color}</li>;
-                                                            })}
-                                                        </ol>
                                                     </li>
                                                 </ul>
                                             </div>

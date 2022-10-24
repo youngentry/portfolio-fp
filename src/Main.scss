@@ -9,7 +9,7 @@ html {
 body {
     font-size: 1.6rem;
     background: url(../public/hd-wallpaper-4051288.jpg) no-repeat center center/cover;
-    backdrop-filter: saturate(200%) brightness(0.7);
+    backdrop-filter: saturate(200%) brightness(0.5);
 }
 
 .case {
@@ -20,22 +20,130 @@ body {
     overflow: hidden;
 
     .inner {
-        width: 140rem;
+        display: flex;
+        width: 160rem;
+        padding: 10.7rem 0;
         height: 80%;
-        padding: 5rem;
         color: #fff;
-        // background: rgba(222, 222, 222, 0.15);
-        backdrop-filter: blur(2px);
-        border-radius: 3rem;
-        .photo {
-            img {
-                width: 50rem;
+        .images {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex: 2;
+
+            .mock {
+                position: relative;
+
+                .screen {
+                    position: absolute;
+                    top: 3.6rem;
+                    left: 11.1rem;
+                    width: 79.2%;
+                    height: 84.4%;
+                    border-radius: 3px;
+                    overflow: hidden;
+                }
+            }
+
+            .cell {
+                position: absolute;
+                bottom: 0;
+                width: 20%;
+            }
+
+            .photo {
+                img {
+                    width: 50rem;
+                }
             }
         }
-    }
 
-    p {
-        white-space: pre;
+        .des {
+            display: flex;
+            flex: 1;
+            text-align: end;
+            flex-direction: column;
+
+            li {
+                font-family: "LeferiPoint-WhiteObliqueA";
+                padding-right: 15rem;
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    position: relative;
+                    font-family: "LeferiPoint-WhiteObliqueA";
+                    font-size: 4.4rem;
+                    font-weight: 900;
+                    margin-bottom: 3rem;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -1rem;
+                        right: 0;
+                        width: 90%;
+                        height: 1px;
+                        background: #ddd;
+                    }
+                }
+                span {
+                    font-weight: 900;
+                    font-size: 3rem;
+                    margin-bottom: 1rem;
+                }
+                strong {
+                    font-weight: 100;
+                    font-size: 1.9rem;
+                    margin-bottom: 2.5rem;
+                }
+
+                .skill {
+                    margin-bottom: 1rem;
+
+                    &:last-child {
+                        margin-bottom: 2.5rem;
+                    }
+                }
+            }
+
+            .color {
+                align-items: flex-end;
+                span {
+                    margin-right: 1rem;
+                }
+
+                ol {
+                    display: flex;
+                    li {
+                        font-size: 0;
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+            }
+
+            .link {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                gap: 1rem;
+                font-family: "Noto Sans KR";
+                button {
+                    padding: 8px 25px 10px 25px;
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: #fff;
+                    background: none;
+                    border: 1px solid #fff;
+                    border-radius: 1rem;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    &:hover {
+                        background: rgba(219, 219, 219, 0.218);
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -184,14 +292,55 @@ body {
                 margin-bottom: 1rem;
                 display: inline-block;
             }
-            p {
-                font-family: "LeferiPoint-WhiteObliqueA";
+        }
+    }
+}
 
-                span {
-                    strong {
-                    }
-                }
-            }
+.section:nth-child(2) {
+    .screen {
+        background: url("../public/imdb.png") no-repeat top center/cover;
+        transition: 5s linear;
+
+        &:hover {
+            background: url("../public/imdb.png") no-repeat bottom center/cover;
+        }
+    }
+}
+.section:nth-child(3) {
+    .screen {
+        background: url("../public/2k.png") no-repeat top center/cover;
+        transition: 3s linear;
+
+        &:hover {
+            background: url("../public/2k.png") no-repeat bottom center/cover;
+        }
+    }
+}
+.section:nth-child(4) {
+    .screen {
+        background: url("../public/ops.png") no-repeat top center/cover;
+        transition: 3s linear;
+
+        &:hover {
+            background: url("../public/ops.png") no-repeat bottom center/cover;
+        }
+    }
+}
+.section:nth-child(5) {
+    .screen {
+        background: url("../public/bespoke.png") no-repeat top center/cover;
+        transition: 3s linear;
+        &:hover {
+            background: url("../public/bespoke.png") no-repeat bottom center/cover;
+        }
+    }
+}
+.section:nth-child(6) {
+    .screen {
+        background: url("../public/lloyd.png") no-repeat top center/cover;
+        transition: 3s linear;
+        &:hover {
+            background: url("../public/lloyd.png") no-repeat bottom center/cover;
         }
     }
 }
