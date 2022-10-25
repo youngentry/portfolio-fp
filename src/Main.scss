@@ -273,12 +273,6 @@ body {
 .section {
     font-size: 3rem;
     color: #fff;
-    // transition: 1s 1s;
-
-    &.active {
-        // font-size: 3rem;
-    }
-
     &.main {
         .case {
             display: flex;
@@ -291,15 +285,29 @@ body {
             }
         }
     }
+
+    .cell {
+        display: none;
+    }
 }
 
 .section:nth-child(2) {
     .screen {
-        background: url("../public/imdb.png") no-repeat top center/cover;
-        transition: 5s linear;
-
+        background: url("../public/megabox.png") no-repeat top center/cover;
+        transition: 2s linear;
         &:hover {
-            background: url("../public/imdb.png") no-repeat bottom center/cover;
+            background: url("../public/megabox.png") no-repeat bottom center/cover;
+        }
+    }
+
+    .type {
+        strong {
+            display: flex;
+            padding: 14px 20px 8px 20px;
+            margin-left: auto;
+            background: #6ecff1;
+            border-radius: 10px;
+            color: #000;
         }
     }
 }
@@ -312,8 +320,42 @@ body {
             background: url("../public/2k.png") no-repeat bottom center/cover;
         }
     }
+    .type {
+        strong {
+            display: flex;
+            padding: 14px 20px 8px 20px;
+            margin-left: auto;
+            background: #94ea7c;
+            border-radius: 10px;
+            color: #000;
+        }
+    }
+    .cell {
+        display: block;
+    }
 }
 .section:nth-child(4) {
+    .screen {
+        background: url("../public/imdb.png") no-repeat top center/cover;
+        transition: 5s linear;
+
+        &:hover {
+            background: url("../public/imdb.png") no-repeat bottom center/cover;
+        }
+    }
+
+    .type {
+        strong {
+            display: flex;
+            padding: 14px 20px 8px 20px;
+            margin-left: auto;
+            background: #d0795e;
+            border-radius: 10px;
+            color: #fff;
+        }
+    }
+}
+.section:nth-child(5) {
     .screen {
         background: url("../public/ops.png") no-repeat top center/cover;
         transition: 3s linear;
@@ -322,8 +364,22 @@ body {
             background: url("../public/ops.png") no-repeat bottom center/cover;
         }
     }
+
+    .type {
+        strong {
+            display: flex;
+            padding: 14px 20px 8px 20px;
+            margin-left: auto;
+            background: #94ea7c;
+            border-radius: 10px;
+            color: #000;
+        }
+    }
+    .cell {
+        display: block;
+    }
 }
-.section:nth-child(5) {
+.section:nth-child(6) {
     .screen {
         background: url("../public/bespoke.png") no-repeat top center/cover;
         transition: 3s linear;
@@ -331,13 +387,23 @@ body {
             background: url("../public/bespoke.png") no-repeat bottom center/cover;
         }
     }
-}
-.section:nth-child(6) {
-    .screen {
-        background: url("../public/lloyd.png") no-repeat top center/cover;
-        transition: 3s linear;
-        &:hover {
-            background: url("../public/lloyd.png") no-repeat bottom center/cover;
+    .type {
+        strong {
+            display: flex;
+            padding: 14px 20px 8px 20px;
+            margin-left: auto;
+            background: #d0795e;
+            border-radius: 10px;
+            color: #fff;
         }
     }
 }
+// .section:nth-child(7) {
+//     .screen {
+//         background: url("../public/lloyd.png") no-repeat top center/cover;
+//         transition: 3s linear;
+//         &:hover {
+//             background: url("../public/lloyd.png") no-repeat bottom center/cover;
+//         }
+//     }
+// }

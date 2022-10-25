@@ -69,7 +69,6 @@ const Main = () => {
                                         <span>
                                             원리에 관심이 많은 예비 프론트엔드 개발자 <strong>{profile.name}</strong>입니다
                                         </span>
-                                        {/* <img src={process.env.PUBLIC_URL + "/html5.svg"} alt="" /> */}
                                     </p>
                                 </div>
                             </div>
@@ -80,21 +79,23 @@ const Main = () => {
                                         <div className="case">
                                             <div className="inner">
                                                 <div className="images">
-                                                    <div className="mock">
-                                                        <figure>
-                                                            <img src={it.mock} alt={it.title} />
-                                                        </figure>
-                                                        <div className="screen"></div>
-                                                    </div>
-                                                    <div className="cell">
-                                                        <img src={it.cell} alt={it.title} />
-                                                    </div>
+                                                    <a href={it.link} target="_blank">
+                                                        <div className="mock">
+                                                            <figure>
+                                                                <img src={it.mock} alt={it.title} />
+                                                            </figure>
+                                                            <div className="screen"></div>
+                                                        </div>
+                                                        <div className="cell">
+                                                            <img src={it.cell} alt={it.title} />
+                                                        </div>
+                                                    </a>
                                                 </div>
                                                 <ul className="des">
                                                     <li>
                                                         <h2>{it.title}</h2>
                                                     </li>
-                                                    <li>
+                                                    <li className="type">
                                                         <span>TYPE</span>
                                                         <strong> {it.type}</strong>
                                                     </li>
@@ -115,17 +116,10 @@ const Main = () => {
                                                         <span>DATE</span>
                                                         <strong> {it.date}</strong>
                                                     </li>
-                                                    {/* <li className="color">
-                                                        {it.color && <span>color</span>}
-                                                        <ol>
-                                                            {it.color?.map((color, idx) => {
-                                                                return <li style={{ background: color }}></li>;
-                                                            })}
-                                                        </ol>
-                                                    </li> */}
+
                                                     <li className="link">
                                                         <div>
-                                                            <a href={it.link} target="_blank">
+                                                            <a href={it.link} target="_blank" rel="noreferrer">
                                                                 <button>VEIW ON WEB</button>
                                                             </a>
                                                         </div>
