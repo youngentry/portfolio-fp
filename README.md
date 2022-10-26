@@ -21,7 +21,7 @@ https://youngentry.github.io/imdb-react/
 
 Jquery 구현.
 
-Jquery를 활용하여 slick 슬라이드, 탭메뉴를 포함한 반응형 웹페이지를 구현했습니다.
+> Jquery를 활용하여 slick 슬라이드, 탭메뉴를 포함한 반응형 웹페이지를 구현했습니다.
 
 https://youngentry.github.io/2k-web-coding-220718/
 https://youngentry.github.io/ops/
@@ -30,6 +30,6 @@ https://youngentry.github.io/ops/
 
 JavaScript
 
-JavaScript를 활용한 펼쳐지는 탭메뉴, swiper 슬라이드를 포함한 일반 웹페이지를 구현했습니다.
+> JavaScript를 활용한 펼쳐지는 탭메뉴, swiper 슬라이드를 포함한 일반 웹페이지를 구현했습니다.
 
 https://youngentry.github.io/bespoke/
