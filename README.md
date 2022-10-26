@@ -14,7 +14,7 @@ React 구현
 
 https://youngentry.github.io/megabox-react/
 
-React활용 리디자인
+React 활용 웹사이트 리디자인
 
 https://youngentry.github.io/imdb-react/
 
