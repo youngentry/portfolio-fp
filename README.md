@@ -34,3 +34,7 @@ JavaScript
 > JavaScript를 활용한 펼쳐지는 탭메뉴, swiper 슬라이드를 포함한 일반 웹페이지를 구현했습니다.
 
 https://youngentry.github.io/bespoke/
+
+### 블로그
+
+https://sakuraop.tistory.com/304
