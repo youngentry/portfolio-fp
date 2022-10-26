@@ -14,7 +14,8 @@ React 구현
 
 https://youngentry.github.io/megabox-react/
 
-React로 웹사이트를 리디자인 했습니다.
+React 리디자인
+
 https://youngentry.github.io/imdb-react/
 
 ## 반응형 웹페이지
