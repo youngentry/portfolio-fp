@@ -1,3 +1,28 @@
+@mixin setStrongSPA {
+    display: flex;
+    padding: 14px 20px 8px 20px;
+    margin-left: auto;
+    background: #6ecff1;
+    border-radius: 10px;
+    color: #000;
+}
+@mixin setStrongStandard {
+    display: flex;
+    padding: 14px 20px 8px 20px;
+    margin-left: auto;
+    background: #d0795e;
+    border-radius: 10px;
+    color: #fff;
+}
+@mixin setStrongResponsive {
+    display: flex;
+    padding: 14px 20px 8px 20px;
+    margin-left: auto;
+    background: #94ea7c;
+    border-radius: 10px;
+    color: #000;
+}
+
 html {
     font-size: 10px;
 }
@@ -6,6 +31,10 @@ body {
     font-size: 1.6rem;
     background: url(../public/hd-wallpaper-4051288.jpg) no-repeat center center/cover;
     backdrop-filter: saturate(200%) brightness(0.5);
+}
+
+.Wrapper {
+    min-width: 1600px;
 }
 
 .case {
@@ -45,6 +74,18 @@ body {
                 position: absolute;
                 bottom: 0;
                 width: 20%;
+                figure {
+                    position: relative;
+                    z-index: 999;
+                }
+                .cellScreen {
+                    position: absolute;
+                    top: 8px;
+                    left: 8px;
+                    width: calc(100% - 15px);
+                    height: calc(100% - 15px);
+                    border-radius: 16px;
+                }
             }
 
             .photo {
@@ -147,6 +188,7 @@ body {
 .PF {
     .num {
         position: fixed;
+        display: none;
         top: 30%;
         right: 5rem;
         z-index: 999;
@@ -154,6 +196,7 @@ body {
 
     .btn {
         position: fixed;
+        display: none;
         top: 5rem;
         right: 5rem;
         z-index: 1000;
@@ -294,7 +337,7 @@ body {
 .section:nth-child(2) {
     .screen {
         background: url("../public/megabox.png") no-repeat top center/cover;
-        transition: 2s linear;
+        transition: 1s linear;
         &:hover {
             background: url("../public/megabox.png") no-repeat bottom center/cover;
         }
@@ -302,12 +345,7 @@ body {
 
     .type {
         strong {
-            display: flex;
-            padding: 14px 20px 8px 20px;
-            margin-left: auto;
-            background: #6ecff1;
-            border-radius: 10px;
-            color: #000;
+            @include setStrongSPA();
         }
     }
 }
@@ -320,14 +358,20 @@ body {
             background: url("../public/2k.png") no-repeat bottom center/cover;
         }
     }
+    .cell {
+        .cellScreen {
+            background: url("../public/2k_res.png") no-repeat top center/cover;
+            transition: 2.5s linear;
+        }
+        &:hover {
+            .cellScreen {
+                background: url("../public/2k_res.png") no-repeat bottom center/cover;
+            }
+        }
+    }
     .type {
         strong {
-            display: flex;
-            padding: 14px 20px 8px 20px;
-            margin-left: auto;
-            background: #94ea7c;
-            border-radius: 10px;
-            color: #000;
+            @include setStrongResponsive();
         }
     }
     .cell {
@@ -337,7 +381,7 @@ body {
 .section:nth-child(4) {
     .screen {
         background: url("../public/imdb.png") no-repeat top center/cover;
-        transition: 5s linear;
+        transition: 3s linear;
 
         &:hover {
             background: url("../public/imdb.png") no-repeat bottom center/cover;
@@ -346,12 +390,7 @@ body {
 
     .type {
         strong {
-            display: flex;
-            padding: 14px 20px 8px 20px;
-            margin-left: auto;
-            background: #d0795e;
-            border-radius: 10px;
-            color: #fff;
+            @include setStrongStandard();
         }
     }
 }
@@ -364,15 +403,20 @@ body {
             background: url("../public/ops.png") no-repeat bottom center/cover;
         }
     }
-
+    .cell {
+        .cellScreen {
+            background: url("../public/ops_res.png") no-repeat top center/cover;
+            transition: 4s linear;
+        }
+        &:hover {
+            .cellScreen {
+                background: url("../public/ops_res.png") no-repeat bottom center/cover;
+            }
+        }
+    }
     .type {
         strong {
-            display: flex;
-            padding: 14px 20px 8px 20px;
-            margin-left: auto;
-            background: #94ea7c;
-            border-radius: 10px;
-            color: #000;
+            @include setStrongResponsive();
         }
     }
     .cell {
@@ -387,23 +431,16 @@ body {
             background: url("../public/bespoke.png") no-repeat bottom center/cover;
         }
     }
+    .cellScreen {
+        background: url("../public/megabox.png") no-repeat top center/cover;
+        transition: 1s linear;
+        &:hover {
+            background: url("../public/megabox.png") no-repeat bottom center/cover;
+        }
+    }
     .type {
         strong {
-            display: flex;
-            padding: 14px 20px 8px 20px;
-            margin-left: auto;
-            background: #d0795e;
-            border-radius: 10px;
-            color: #fff;
+            @include setStrongStandard();
         }
     }
 }
-// .section:nth-child(7) {
-//     .screen {
-//         background: url("../public/lloyd.png") no-repeat top center/cover;
-//         transition: 3s linear;
-//         &:hover {
-//             background: url("../public/lloyd.png") no-repeat bottom center/cover;
-//         }
-//     }
-// }
