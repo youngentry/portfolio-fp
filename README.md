@@ -36,6 +36,8 @@ JavaScript
 
 https://youngentry.github.io/bespoke/
 
-### 블로그
+## 블로그
+
+새롭게 배운 기술들을 기록하는 블로그입니다.
 
 https://sakuraop.tistory.com/
