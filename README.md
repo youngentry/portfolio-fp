@@ -25,6 +25,7 @@ Jquery 구현
 > Jquery를 활용하여 **slick 슬라이드**, **탭메뉴**를 포함한 **반응형 웹페이지**를 구현했습니다.
 
 https://youngentry.github.io/2k-web-coding-220718/
+
 https://youngentry.github.io/ops/
 
 ## 일반 웹페이지
