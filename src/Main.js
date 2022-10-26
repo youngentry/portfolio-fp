@@ -97,7 +97,7 @@ const Main = () => {
                                                         </a>
                                                     </div>
                                                     <ul className="des">
-                                                        <li>
+                                                        <li className="tit">
                                                             <h2>{it.title}</h2>
                                                         </li>
                                                         <li className="type">
@@ -117,7 +117,7 @@ const Main = () => {
                                                                 return <strong className="skill">{el} </strong>;
                                                             })}
                                                         </li>
-                                                        <li>
+                                                        <li className="date">
                                                             <span>DATE</span>
                                                             <strong> {it.date}</strong>
                                                         </li>
@@ -133,9 +133,6 @@ const Main = () => {
                                                                     <button>GitHub</button>
                                                                 </a>
                                                             </div>
-                                                        </li>
-                                                        <li>
-                                                            <p>{it.info}</p>
                                                         </li>
                                                     </ul>
                                                 </div>
