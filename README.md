@@ -37,4 +37,4 @@ https://youngentry.github.io/bespoke/
 
 ### 블로그
 
-https://sakuraop.tistory.com/304
+https://sakuraop.tistory.com/
